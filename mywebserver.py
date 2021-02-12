@@ -1,24 +1,4 @@
-# Developing a Simple Webserver
-## AIM:
-To develop a simple webserver to serve html pages.
-
-## DESIGN STEPS:
-### Step 1: 
-HTML content creation
-### Step 2:
-Design of webserver workflow
-### Step 3:
-Implementation using Python code
-### Step 4:
-Serving the HTML pages.
-### Step 5:
-Testing the webserver
-
-## PROGRAM:
-
-### mywebserver.py:
-```
-        from http.server import HTTPServer,BaseHTTPRequestHandler
+from http.server import HTTPServer,BaseHTTPRequestHandler
 
 Content="""
 <!doctype html>
@@ -61,15 +41,3 @@ server_address=('',80)
 httpd = HTTPServer(server_address,myhandler)
 print("MY WEBSERVER IS RUNNING...")
 httpd.serve_forever()
-
-```
-
-## OUTPUT:
-![output](./static/img/out.png)
-
-## CODE VALIDATOR:
-![output](./static/img/val.png)
-
-## RESULT:
-        Thus a website is designed for a simple webserver to serve html pages and is hosted in the URL : http://loki.student.saveetha.in/ . HTML code is validated.
-
